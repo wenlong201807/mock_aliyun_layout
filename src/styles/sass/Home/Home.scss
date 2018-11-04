@@ -1,0 +1,64 @@
+// .home {
+// 	display: flex;
+// 	min-height: 100vh;
+// 	flex-direction: column;
+// 	// background:#ccc;
+// 	.header {
+// 		flex: 2;
+// 		background: pink;
+// 	}
+// 	.main {
+// 		flex: 8;
+// 		background: #ccc;
+// 	}
+// }
+@import '~@/styles/common/Home_common.scss';
+.home {
+	.header {
+		height: $h_header;
+		line-height: $h_header;
+		padding-left: 20px;
+		background: pink;
+	}
+	.main {
+		height: $h_main;
+		background: #fff;
+		.main_nav {
+			height: $h_header;
+			line-height: $h_header;
+			padding-left: 20px;
+			background: yellowgreen;
+			.poptip_t {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+// 修改弹出的左侧导航栏的默认样式
+.ivu-drawer-wrap {
+	top: $h_header;
+	height: $h_main;
+}
+.ivu-drawer {
+	top: $h_header;
+	height: $h_main;
+}
+.one_drawer {
+	.ivu-drawer-left {
+		left: 0px;
+	}
+}
+.two_drawer {
+	.ivu-drawer-left {
+		left: 256px;
+	}
+}
+.three_drawer {
+	.ivu-drawer-left {
+		left: 512px;
+		width: 500px;
+		.ivu-drawer-content {
+			width: 400px;
+		}
+	}
+}
